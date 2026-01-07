@@ -1,0 +1,79 @@
+# For the benefit of emacs users: -*- shell-script -*-
+###########################
+# xbindkeys configuration #
+###########################
+#
+# Version: 1.8.7
+#
+# If you edit this file, do not forget to uncomment any lines
+# that you change.
+# The pound(#) symbol may be used anywhere for comments.
+#
+# To specify a key, you can use 'xbindkeys --key' or
+# 'xbindkeys --multikey' and put one of the two lines in this file.
+#
+# The format of a command line is:
+#    "command to start"
+#       associated key
+#
+#
+# A list of keys is in /usr/include/X11/keysym.h and in
+# /usr/include/X11/keysymdef.h
+# The XK_ is not needed.
+#
+# List of modifier:
+#   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
+#
+
+# The release modifier is not a standard X modifier, but you can
+# use it if you want to catch release events instead of press events
+
+# By defaults, xbindkeys does not pay attention with the modifiers
+# NumLock, CapsLock and ScrollLock.
+# Uncomment the lines above if you want to pay attention to them.
+
+#keystate_numlock = enable
+#keystate_capslock = enable
+#keystate_scrolllock= enable
+
+# Examples of commands:
+
+"xbindkeys_show"
+  control+shift + q
+
+# Macro for mouse button 9 (or 4 according to SteelSeries)
+# "sh -c 'kdialog --msgbox message optional_detailed_message'"
+# b:9
+# Open Firefox
+"firefox --url http://10.0.0.50:2283"
+  Control + b:2
+
+# Printscreen for screenshots
+# PRNT - Capture entire screen
+# "/bin/bash /home/joona/scripts/screenshots/capture.sh"
+  # Print
+# CTRL + PRNT - Capture a selected area
+# "/bin/bash /home/joona/scripts/screenshots/area_capture.sh"
+  # Control + Print
+# SHIFT + PRNT - Capture the selected window
+# "/bin/bash /home/joona/scripts/screenshots/window_capture.sh"
+#   Shift + Print
+
+# Send notifications for hydras spec attacks
+# "/usr/bin/env python3 /home/joona/python/osrs/count_hydra_attacks.py"
+#   Shift + b:9
+
+# OCR - Image to text from selected area
+"/home/joona/python/scripts/ocr.py"
+  Pause
+  # m:0x10 + c:127
+
+# - <---- ALT_R, CTRL_R, SHIFT_R META_R/WIN_R -->
+"openrgb -p sunset"
+  Control+Shift+Alt+Mod2 + s
+  # m:0x1d + c:39
+
+"openrgb -p off"
+  Control+Shift+Alt+Mod2 + o
+

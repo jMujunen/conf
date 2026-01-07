@@ -1,0 +1,100 @@
+# Env Vars
+# -------
+export COLUMNS=120
+export EDITOR=micro
+export MICRO_TRUECOLOR=1
+export CALCHISTFILE=$HOME/.cache/.calc_history
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
+export LESS='-RFs#10 --exit-follow-on-close --use-color -Dd+m -Du+4 -DM9 -DP13 -Ds+y -Dk+226232'
+export LESSOPEN='|-/usr/bin/lesspipe.sh %s'
+export MERGEPROG='vscodium --wait --merge'
+# export MANPATH="$HOME/.local/share/uv/tools/*/share/man:$MANPATH"
+export LESSCOLORIZER='bat --theme=base16 --language man'
+
+export PYTHONPYCACHEPREFIX=$HOME/.cache/__pycache__
+
+export PYTHONPATH=$HOME/.ipython/profile_main/:$HOME/python/modules/:\
+$HOME/python/scripts/:$HOME/python/:$HOME/python/scripts/bashhelpers/:\
+$HOME/python/scripts/bashhelpers/ColorizeOutput/:$HOME/python/Projects/termllama/termllama/:\
+$HOME/python/Projects/fsutils/:$HOME/python/Projects/Momentis/:\
+$HOME/python/libs/hwutils/hwutils/:$HOME/python/Projects/hwutils:\
+$HOME/python/Projects/hwutils/hwutils:$HOME/python/scripts/hass:\
+$HOME/python/scripts/bashhelpers/pacman:$HOME/python/custom/:\
+$HOME/.local/bin/hyperfine/scripts:$HOME/python/scripts/io:\
+$HOME/python/cython:$HOME/python/rest/hass:$HOME/python/TODO/kitty
+
+export PATH=$HOME/.dotfiles/:$HOME/scripts/:$HOME/scripts/graphing/:\
+$HOME/scripts/git_scripts/:$HOME/.local/bin:$HOME/scripts/shutdown:\
+$HOME/scripts/startup:$HOME/scripts/logging/:$HOME/Code/Workspace:\
+$HOME/Android/Sdk/build-tools/35.0.0:$HOME/Android/Sdk/platform-tools:\
+$HOME/python/scripts/io/:/home/joona/.local/bin/:$HOME/scripts/fzf:\
+$HOME/.local/bin/hyperfine/scripts:$PATH:$PYTHONPATH
+
+# Git
+# ---
+export GIT_COMMITTER_NAME="J Mujunen"
+export GIT_COMMITTER_EMAIL="jMujunen@github.com"
+export GIT_CONFIG_GLOBAL="$HOME/.config/git/.gitconfig"
+# ZSH
+# ---
+export HELPDIR='/usr/share/zsh/5.9/help'
+export HISTFILE=$ZDOTDIR/.zsh_history
+# export ZSH_COMPDUMP=$ZSH/.zcompdump-arch-5.9
+
+# Wayland/Nvidia specific
+# ----------------------
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
+export GBM_BACKEND=nvidia-drm
+export GDK_BACKEND=wayland
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+export MOZ_ENABLE_WAYLAND=1
+# export QSG_RENDERER_LOOP=basics
+# export QT_ENABLE_HIGHDPI_SCALING=1
+# export QT_PLUGIN_PATH=/usr/lib/qt/plugins:/usr/lib/qt6/plugins
+export QT_QPA_PLATFORM="wayland;xcb"
+
+# NVIDIA
+export SDL_VIDEO_FULLSCREEN_HEAD=1
+export __GL_SYNC_TO_VBLANK=1
+export __GL_SYNC_DISPLAY_DEVICE=DP-2
+export VDPAU_NVIDIA_SYNC_DISPLAY_DEVICE=DP-2
+
+# Hardware Accel
+export LIBVA_DRIVER_NAME=nvidia
+export VDPAU_DRIVER=nvidia
+
+# Random
+# -----
+export TIMEFMT=$'\n================\nCPU\t%P\ntotal\t%*E'
+export MAKEFLAGS="-j$(nproc)"
+export TESSDATA_PREFIX=/usr/share/tessdata
+export DIFFPROG="kitty +kitten diff"
+export MOZ_DISABLE_RDD_SANDBOX=1
+export USER_ZDOTDIR=$ZDOTDIR
+export KITTY_PANEL_CFG="/home/joona/.config/kitty/panel.d/bg_padded.conf"
+# Ollama
+# ------
+export OLLAMA_KEEP_ALIVE=30
+export OLLAMA_MODELS=/home/joona/.ollama/models/
+export OLLAMA_HOST=10.0.0.21:11434
+# Python
+# ------
+export USE_EMOJI=false # pipx
+# export UV_CACHE_DIR=$HOME/.cache/uv
+# export MYPY_CACHE_DIR=$HOME/.cache/.mypy_cache
+# --------------------------------------------------------------- #
+
+# Source dedicated alias file
+[[ -f $HOME/.bash_aliases ]] && . $HOME/.bash_aliases
+[[ -f $HOME/.dotfiles/.bash_aliases ]] && . $HOME/.dotfiles/.bash_aliases
+
+# Source dedicated functions file
+[[ -f $HOME/.bash_functions ]] && . $HOME/.functions
+[[ -f $HOME/.dotfiles/.bash_functions ]] && . $HOME/.dotfiles/.bash_functions
+
+# --------------------------------------------------------------- #
+
+# Private constant variables like API keys/tokens
+[[ -f $HOME/.dotfiles/.secrets ]] && source "$HOME/.dotfiles/.secrets"
+
+export KITTY_CONFIG_DIRECTORY="$HOME/.config/kitty"
