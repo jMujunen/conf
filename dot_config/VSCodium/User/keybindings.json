@@ -1,0 +1,230 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+k e",
+    "command": "-workbench.files.action.focusOpenEditorsView",
+    "when": "workbench.explorer.openEditorsView.active"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+shift+numpad_multiply",
+    "command": "workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+k ctrl+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+alt+meta+c",
+    "command": "continue.writeCommentsForCode"
+  },
+  {
+    "key": "ctrl+alt+meta+g",
+    "command": "continue.fixGrammar"
+  },
+  {
+    "key": "ctrl+alt+meta+f",
+    "command": "continue.fixCode"
+  },
+  {
+    "key": "ctrl+alt+meta+d",
+    "command": "continue.writeDocstringForCode"
+  },
+  {
+    "key": "shift+alt+meta+tab",
+    "command": "editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+<",
+    "command": "-editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "-continue.focusContinueInputWithoutClear"
+  },
+  {
+    "key": "ctrl+alt+meta+o",
+    "command": "continue.optimizeCode"
+  },
+  {
+    "key": "ctrl+alt+meta+n",
+    "command": "-welcome.showNewFileEntries"
+  },
+  {
+    "key": "ctrl+shift+meta+n",
+    "command": "continue.newSession"
+  },
+  {
+    "key": "ctrl+alt+meta+h",
+    "command": "continue.quickFix"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "-extension.currentAREPLSession",
+    "when": "!inQuickOpen && !terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "-notification.acceptPrimaryAction",
+    "when": "notificationFocus || notificationToastsVisible"
+  },
+  {
+    "key": "ctrl+shift+space",
+    "command": "editor.action.triggerSuggest"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.duplicateSelection"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "focusSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-focusSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "toggleSuggestionDetails",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-toggleSuggestionDetails",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+\\",
+    "command": "-editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+\\",
+    "command": "-workbench.action.terminal.focusTabs",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+  },
+  {
+    "key": "ctrl+shift+[IntlBackslash]",
+    "command": "-editor.action.accessibleViewGoToSymbol",
+    "when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "-editor.action.accessibleViewGoToSymbol",
+    "when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "-editor.action.inPlaceReplace.down",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+.",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+alt+,",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+alt+]",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "ctrl+alt+]",
+    "command": "-jupyter.gotoNextCellInFile",
+    "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+shift+alt+]",
+    "command": "-jupyter.extendSelectionByCellBelow",
+    "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+shift+space",
+    "command": "editor.action.inlineSuggest.trigger"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "f5",
+    "command": "-ipython.runFileWithCli",
+    "when": "editorTextFocus && ipython.isUse && !inDebugMode && editorLangId == 'python'"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+k ctrl+\\",
+    "command": "-workbench.action.splitEditorDown"
+  },
+  {
+    "key": "ctrl+k ctrl+\\",
+    "command": "-workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "ctrl+k ctrl+\\",
+    "command": "-workbench.action.splitEditorOrthogonal"
+  },
+  {
+    "key": "ctrl+k ctrl+\\",
+    "command": "-workbench.action.splitEditorUp"
+  },
+  {
+    "key": "ctrl+f4",
+    "command": "workbench.action.debug.callStackTop"
+  },
+]

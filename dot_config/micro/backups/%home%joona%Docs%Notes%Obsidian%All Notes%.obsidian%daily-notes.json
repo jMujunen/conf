@@ -1,0 +1,7 @@
+{
+  "format": "YYYY-D-MMMM.to\\do",
+  "folder": "/DailyNotes",
+  "autorun": true,
+  "preview": true,
+  "template": ".Templates/DailyNotes"
+}

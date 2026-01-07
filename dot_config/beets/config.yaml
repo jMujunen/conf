@@ -1,0 +1,119 @@
+directory: /mnt/hddred/MediaRoot/Music
+library: /mnt/hddred/MediaRoot/Music/data/musiclibrary.db
+
+plugins:
+  - albumtypes
+  - badfiles #
+  - convert #
+  - duplicates # half
+  - edit #
+  - embedart
+  - export #
+  - filefilter
+  - fuzzy
+  - importfeeds #
+  - inline
+  - kodiupdate
+  - lastgenre
+  - listenbrainz
+  - lyrics
+  - missing #
+  - musicbrainz
+  - playlist
+  - smartplaylist
+  - spotify
+
+import:
+    move: yes
+    copy: no
+    resume: ask
+    incremental: yes
+    autotag: yes
+
+embedart:
+  maxwidth: 1000
+  compare_threshold: 80
+
+
+paths:
+    default: $albumartist/$album%aunique{}/$track $title
+    singleton: $artist/Singles/$title
+    comp: Compilations/$album%aunique{}/$track $title
+    albumtype:soundtrack: Soundtracks/$album%aunique{}/$track - $title
+
+
+playlist:
+    auto: yes
+    relative_to: /mnt/hddred/MediaRoot/Music
+    playlist_dir: /mnt/hddred/MediaRoot/Music/playlists
+    forward_slash: no
+
+smartplaylist:
+    relative_to: /mnt/hddred/MediaRoot/Music
+    playlist_dir: /mnt/hddred/MediaRoot/Music/playlists
+    forward_slash: no
+    playlists:
+        - name: all.m3u
+          query: ''
+
+fetchart:
+    sources: filesystem coverart itunes amazon albumart lastfm
+    minwidth: 300
+    cautious: true
+    lastfm_key: 97e9246e84cb63f5139333376d2e93d3
+
+
+musicbrainz:
+    genre: yes
+
+lastfm:
+    user: jmuju
+    api_key: 97e9246e84cb63f5139333376d2e93d3
+
+
+listenbrainz:
+    token: 579de054-1915-4589-8f68-779ccda68887
+    username: jmuju
+
+kodi:
+    host: 10.0.0.87
+    port: 8080
+    user: kodi
+    pwd: kakka
+
+
+importfeeds:
+    formats: m3u m3u_multi
+    relative_to: /mnt/hddred/MediaRoot/Music
+    dir: /mnt/hddred/MediaRoot/Music/playlists
+
+badfiles:
+    check_on_import: yes
+    commands:
+        flac: flac --test --warnings-as-errors --silent
+
+
+ui:
+  color: yes
+
+lyrics:
+    auto: yes
+
+lastgenre:
+    canonical: yes
+    source: artist
+
+export:
+    json:
+        formatting:
+            ensure_ascii: false
+            indent: 4
+            separators: [',' , ': ']
+            sort_keys: true
+    csv:
+        formatting:
+            delimiter: ','
+
+missing:
+    count: yes
+    total: yes

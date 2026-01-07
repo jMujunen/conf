@@ -1,0 +1,22 @@
+Refactor Temp, Ram, and Miscs classes for better inheritance
+
+- Changed class structure for Ram and Miscs to inherit from Sensor base class
+- Updated method signatures in Ram and Miscs to match the new Sensor base class
+- Added missing initializer calls in Ram and Miscs classes
+- Removed redundant return statement in TemperatureSensor's __init__ method
+- Fixed formatting issues in docstrings for Ram and Miscs classes
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#	modified:   hwutils/CPU.py
+#	modified:   hwutils/DISK.py
+#	modified:   hwutils/FAN.py
+#	modified:   hwutils/NET.py
+#	modified:   hwutils/SYS.py
+#	modified:   hwutils/Sensor.py
+#	modified:   hwutils/__init__.py
+#	modified:   hwutils/decorators.py
+#

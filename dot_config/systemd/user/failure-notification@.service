@@ -1,0 +1,10 @@
+[Unit]
+Description=Send a notification about a failed systemd unit
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/custom/failure-notification.sh %i user
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target

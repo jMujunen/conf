@@ -1,0 +1,11 @@
+[Unit]
+Description=Serve HTML Notes With Python HTTP Server
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/python3 -m http.server --directory="/home/joona/Docs/Exported Markdown/HTML"
+Restart=on-failure
+RestartSec=30
+Environment="PYTHONPATH=$PYTHONPATH:/usr/lib/python3.12/site-packages:/"
+[Install]
+WantedBy=default.target

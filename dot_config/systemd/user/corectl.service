@@ -1,0 +1,10 @@
+[Unit]
+Description=corectl autostart
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/bin/corectrl -m PowerSave --minimize-systray
+Restart=never
+[Install]
+WantedBy=default.target

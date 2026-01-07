@@ -1,0 +1,18 @@
+[Unit]
+Description=Startup script
+After=default.target
+
+[Service]
+Type=simple
+# ExecStart=/home/joona/pyt/python /home/joona/python/Projects/logging/csv_output.py
+ExecStart=/home/joona/.venv/bin/python3 /home/joona/python/Projects/logging/csv_output.py
+
+Environment="PYTHONPATH=/home/joona/python/Projects/hwutils:/home/joona/python/modules"
+# /home/joona/python/Projects/progress-bar/"
+
+Environment="PATH=/usr/bin:/bin:/home/joona/python/Projects/logging/.venv/bin:/home/joona/python/Projects/hwutils:/home/joona/python/Projects/logging/.venv/lib/python3.13/site-packages:/home/joona/python/Projects/python-modules/progress-bar/"
+
+Restart=on-failure
+RestartSec=30
+[Install]
+WantedBy=default.target

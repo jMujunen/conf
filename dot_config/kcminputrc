@@ -1,0 +1,32 @@
+[ButtonRebinds][Mouse]
+ExtraButton2=Key,Ctrl+Alt+Shift+CapsLock
+
+[Keyboard]
+NumLock=0
+RepeatDelay=200
+RepeatRate=36.128
+
+[Libinput][4152][5658][SteelSeries SteelSeries Apex 3 Consumer Control]
+Enabled=false
+
+[Libinput][4152][5658][SteelSeries SteelSeries Apex 3 Mouse]
+Enabled=false
+PointerAcceleration=1.000
+PointerAccelerationProfile=1
+ScrollFactor=5
+
+[Libinput][4152][6220][SteelSeries SteelSeries Rival 3]
+PointerAcceleration=0.000
+PointerAccelerationProfile=1
+ScrollFactor=1
+
+[Libinput][5426][132][Razer Razer DeathAdder V2]
+Enabled=false
+PointerAccelerationProfile=1
+
+[Libinput][5426][132][Razer Razer DeathAdder V2 Keyboard]
+Enabled=false
+
+[Mouse]
+X11LibInputXAccelProfileFlat=true
+cursorSize=18

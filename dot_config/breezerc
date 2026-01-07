@@ -1,0 +1,7 @@
+[Common]
+OutlineCloseButton=true
+
+[Style]
+MenuItemDrawStrongFocus=false
+MenuOpacity=19
+TabBarDrawCenteredTabs=true

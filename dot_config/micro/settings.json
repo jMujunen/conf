@@ -1,0 +1,20 @@
+{
+    "*.env": {
+        "filetype": "shell"
+    },
+    "autoclose": false,
+    "autosu": true,
+    "colorcolumn": 80,
+    "colorscheme": "everforest",
+    "diffgutter": true,
+    "hlsearch": true,
+    "lsp.autocompleteDetails": true,
+    "lsp.formatOnSave": false,
+    "lsp.ignoreTriggerCharacters": "completion,signature",
+    "lsp.server": "python=jedi-language-server",
+    "matchbracestyle": "highlight",
+    "mkparents": true,
+    "rmtrailingws": true,
+    "softwrap": true,
+    "tabstospaces": true
+}

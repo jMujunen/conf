@@ -1,0 +1,173 @@
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=42, 51, 57
+ColorAmount=0.65130,191,146
+ColorEffect=2
+ContrastAmount=0.7
+ContrastEffect=0
+Enable=
+IntensityAmount=0.2
+IntensityEffect=0
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=false
+Color=47,56,62
+ColorAmount=0
+ColorEffect=2
+ContrastAmount=0
+ContrastEffect=0
+Enable=true
+IntensityAmount=0.75
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=64,69,82
+BackgroundNormal=55,66,71
+DecorationFocus=130,191,146
+DecorationHover=118, 191, 146
+ForegroundActive=118, 191, 146
+ForegroundInactive=122,132,120
+ForegroundLink=127,187,179
+ForegroundNegative=230,126,128
+ForegroundNeutral=219,188,127
+ForegroundNormal=211,198,170
+ForegroundPositive=141,161,1
+ForegroundVisited=214,153,182
+
+[Colors:Complementary]
+BackgroundNormal=42,46,50
+
+[Colors:Selection]
+BackgroundAlternate=118,191,146
+BackgroundNormal=118, 191, 146
+DecorationFocus=118, 191, 146
+DecorationHover=118, 191, 146
+ForegroundActive=42, 51, 57
+ForegroundInactive=122,132,120
+ForegroundLink=127,187,179
+ForegroundNegative=230,126,128
+ForegroundNeutral=219,188,127
+ForegroundNormal=73,88,97
+ForegroundPositive=141,161,1
+ForegroundVisited=214,153,182
+
+[Colors:Tooltip]
+BackgroundAlternate=47,52,63
+BackgroundNormal=55,66,71
+DecorationFocus=118, 191, 146
+DecorationHover=118, 191, 146
+ForegroundActive=118, 191, 146
+ForegroundInactive=122,132,120
+ForegroundLink=127,187,179
+ForegroundNegative=230,126,128
+ForegroundNeutral=219,188,127
+ForegroundNormal=211,198,170
+ForegroundPositive=141,161,1
+ForegroundVisited=214,153,182
+
+[Colors:View]
+BackgroundAlternate=55,66,71
+BackgroundNormal=43,51,57
+DecorationFocus=118, 191, 146
+DecorationHover=118, 191, 146
+ForegroundActive=118, 191, 146
+ForegroundInactive=122,132,120
+ForegroundLink=127,187,179
+ForegroundNegative=230,126,128
+ForegroundNeutral=219,188,127
+ForegroundNormal=211,198,170
+ForegroundPositive=141,161,1
+ForegroundVisited=214,153,182
+
+[Colors:Window]
+BackgroundAlternate=55,66,71
+BackgroundNormal=42, 51, 57
+DecorationFocus=118, 191, 146
+DecorationHover=118, 191, 146
+ForegroundActive=118, 191, 146
+ForegroundInactive=122,132,120
+ForegroundLink=127,187,179
+ForegroundNegative=230,126,128
+ForegroundNeutral=219,188,127
+ForegroundNormal=211,198,170
+ForegroundPositive=141,161,1
+ForegroundVisited=214,153,182
+
+[DirSelect Dialog]
+DirSelectDialog Size=816,582
+History Items[$e]=file:$HOME/Desktop,file:$HOME/Desktop,file:$HOME/Videos,file:///tmp,file:$HOME/.dotfiles,file:$HOME/Docs/Exported Markdown/Pandoc,file:$HOME/python,file:$HOME/Desktop,file:$HOME/Desktop,file:$HOME/.config/kitty,file:$HOME/python/Projects/fsutils,file:///mnt/ramfs,file:///mnt,file:///media/removeable,file:///mnt/hdd,file:$HOME/python/Projects/Momentis,file:$HOME/.dotfiles,file:$HOME/python,file:$HOME/python/Projects/Momentis/frames,file:$HOME/.continue,file:$HOME/Docs/Exported Markdown/HTML,file:$HOME/Docs/Exported Markdown/HTML,file:$HOME/Docs/Exported Markdown/HTML,file:$HOME/Docs/Exported Markdown/HTML,file:$HOME/Docs/Exported Markdown,file:$HOME/python/Projects/fsutils,file:$HOME/Docs/Notes/Obsidian/obsidian-workflow-template,file:$HOME/python,file:$HOME/python,file:$HOME/Docs/Notes/Obsidian/All Notes/Code,file:$HOME,file:$HOME/Notes/md,file:$HOME/Pictures/Wallpapers/everforest-walls,file:$HOME/.ipython,file:$HOME/.ssh,file:$HOME/Notes,file:///mnt/ssd/Photos/Gallery,file:///mnt/ssd/Photos/Latest,file:$HOME/Docs/Notes/PDF,file:$HOME/Docs/Notes/HTML,file:$HOME/Docs/Notes/HTML,file:$HOME/Pictures/Wallpapers/everforest-walls,file:$HOME/Pictures/Wallpapers/everforest-walls,file:///run/user/1000,file:///mnt/tmpfs,file:///mnt/hdd/IMPORTANT_MEDIA/from_windows/Pictures/Slideshow,file:$HOME/Pictures,file:///mnt/hdd/IMPORTANT_MEDIA,file:$HOME/Docs/Notes/PDF,file:$HOME/Docs/Notes/HTML/Atom
+
+[General]
+ColorScheme=Everforest_Custom_Fark
+LastUsedCustomAccentColor=61,174,233
+TerminalApplication=kitty
+TerminalService=kitty.desktop
+UseSystemBell=true
+XftAntialias=true
+XftHintStyle=hintslight
+XftSubPixel=rgb
+fixed=Cascadia Code,10,-1,5,300,0,0,0,0,0,0,0,0,0,0,1,Light
+font=FantasqueSansM Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=FantasqueSansM Nerd Font Propo,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=FantasqueSansM Nerd Font Propo,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=FantasqueSansMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+
+[Icons]
+Theme=Everforest-Light
+
+[KDE]
+AnimationDurationFactor=0.5
+LookAndFeelPackage=org.kde.breezedark.desktop
+ShowDeleteCommand=false
+widgetStyle=qt6ct-style
+
+[KFileDialog Settings]
+Allow Expansion=true
+Automatically select filename extension=true
+Breadcrumb Navigation=false
+Decoration position=0
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Preview Width=223
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=false
+Show Preview=true
+Show Speedbar=true
+Show hidden files=true
+Sort by=Date
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=true
+Speedbar Width=163
+View Style=DetailTree
+
+[KScreen]
+ScreenScaleFactors=DP-2=1;HDMI-A-1=1;
+
+[KShortcutsDialog Settings]
+Dialog Size=1920,1052
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
+MaximumSize=209715200
+
+[Shortcuts]
+Quit=Ctrl+Q;\s
+
+[Sounds]
+Enable=false
+Theme=Gruvbox-Plus-Dark
+
+[Toolbar style]
+ToolButtonStyleOtherToolbars=NoText
+
+[WM]
+activeBackground=42,51,57
+activeBlend=42,51,57
+activeFont=FantasqueSansM Nerd Font Propo,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeForeground=211,198,170
+inactiveBackground=42,51,57
+inactiveBlend=42,51,57
+inactiveForeground=122,132,120

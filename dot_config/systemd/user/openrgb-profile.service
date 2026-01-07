@@ -1,0 +1,10 @@
+[Unit]
+Description=OpenRBG Profile Setter
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/openrgb -p Chrry
+Environment="PATH=${PATH}:${PYTHONPATH}:/usr/bin:/bin"
+[Install]
+WantedBy=default.target

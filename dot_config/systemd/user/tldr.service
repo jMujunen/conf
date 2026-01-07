@@ -1,0 +1,12 @@
+
+[Unit]
+Description=TLDR db update
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/bin/tldr --update
+Restart=on-failure
+RestartSec=30
+[Install]
+WantedBy=default.target

@@ -1,0 +1,28 @@
+# Custom config for bat - cat clone with wings
+
+--italic-text=always
+
+# Uncomment the following line to disable automatic paging:
+
+#--paging=never
+# Syntax mappings: map a certain filename pattern to a language.
+
+# Example 1: use the C++ syntax for Arduino .ino files
+#--map-syntax "_.ino:C++"
+
+--map-syntax "*.ignore:Git Ignore"
+
+# Ini
+--map-syntax "*.conf:INI"
+--map-syntax "*rc:INI"
+--map-syntax "config:INI"
+--map-syntax "*.colors:INI"
+--map-syntax "*.theme:INI"
+--map-syntax "**/.ssh/config:SSH Config"
+--map-syntax "/home/*/.ssh/config:SSH Config"
+--map-syntax ".bash*:Bourne Again Shell (bash)"
+--map-syntax "*.consts:Bourne Again Shell (bash)"
+
+
+
+--theme="Everforest Dark"

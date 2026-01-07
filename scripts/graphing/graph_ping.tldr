@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# graph_ping.sh - Graphs ping results using ttyplot
+
+# Print help message
+if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
+    echo "Usage: graph_ping.sh [IP_ADDRESS] [PACKET_INTERVAL]"
+    exit 0
+fi
+
+
+# TODO::
+# - Add support for multiple IP addresses
+# - Add support for multiple ping runs
+ping -i "$2" "$1" | sed -u 's/^.*time=//g; s/ ms//g' | ttyplot -t "$1" -u ms
